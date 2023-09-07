@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MemberController {
 
-    @GetMapping(value = {"/", "main"})
+    @GetMapping("/")
     public ModelAndView getHelloController(){
         ModelAndView mv = new ModelAndView("index");
         String msg = "Hello Springboot MVC";
